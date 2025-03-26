@@ -1,30 +1,96 @@
-# Getting Started with Create React App
+# Resollect App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based financial portfolio management system built with **React** and **Tailwind CSS**. This application provides an interactive dashboard for loan tracking and user management.
 
-## Available Scripts
+## Live Demo
+[Live App](https://aringer22.github.io/Resollect_App/)
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Dashboard**: Overview of loan status and analytics.
+- **Portfolio Management**: Filter and sort loans by type, borrower, amount, etc.
+- **User Management**: Manage user permissions and access.
+- **Auction Management**: Track auction statuses.
+- **Responsive UI**: Fully responsive and optimized for desktop and mobile.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React**: Frontend framework
+- **Tailwind CSS**: Styling
+- **React Router**: Navigation
+- **MUI (Material-UI)**: UI components
+- **GitHub Pages**: Deployment
 
-### `npm test`
+## Setup Instructions
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Clone the repository:**
 
-### `npm run build`
+```bash
+  git clone https://github.com/ARinger22/Resollect_App.git
+  cd Resollect_App
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Install dependencies:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+  npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Run the development server:**
+
+```bash
+  npm run dev
+```
+
+4. **Build for production:**
+
+```bash
+  npm run build
+```
+
+## Deployment to GitHub Pages
+
+1. **Install `gh-pages`:**
+
+```bash
+  npm install gh-pages --save-dev
+```
+
+2. **Add deployment scripts in `package.json`:**
+
+```json
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}
+```
+
+3. **Deploy:**
+
+```bash
+  npm run deploy
+```
+
+## Project Structure
+
+```
+├── public            # Static assets
+├── src
+│   ├── components   # Reusable components
+│   ├── pages        # Main views (Dashboard, Portfolio, etc.)
+│   ├── utils        # Helper functions
+│   └── App.jsx      # Main application
+└── package.json
+```
+
+## Contributions
+
+Feel free to fork and submit pull requests. For major changes, open an issue first.
+
+## Contact
+
+For any questions, reach out to: [gautamarpit1204@gmail.com](mailto:gautamarpit1204@gmail.com)
+
+---
+
+**Thank for Visting**
