@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/resollect-app/static/css/main.6281ebaa.css",
-    "main.js": "/resollect-app/static/js/main.7f9bf400.js",
-    "static/js/453.97f3c13a.chunk.js": "/resollect-app/static/js/453.97f3c13a.chunk.js",
-    "index.html": "/resollect-app/index.html",
-    "main.6281ebaa.css.map": "/resollect-app/static/css/main.6281ebaa.css.map",
-    "main.7f9bf400.js.map": "/resollect-app/static/js/main.7f9bf400.js.map",
-    "453.97f3c13a.chunk.js.map": "/resollect-app/static/js/453.97f3c13a.chunk.js.map"
+    "main.css": "/Resollect_app/static/css/main.6281ebaa.css",
+    "main.js": "/Resollect_app/static/js/main.54b9e315.js",
+    "static/js/453.97f3c13a.chunk.js": "/Resollect_app/static/js/453.97f3c13a.chunk.js",
+    "index.html": "/Resollect_app/index.html",
+    "main.6281ebaa.css.map": "/Resollect_app/static/css/main.6281ebaa.css.map",
+    "main.54b9e315.js.map": "/Resollect_app/static/js/main.54b9e315.js.map",
+    "453.97f3c13a.chunk.js.map": "/Resollect_app/static/js/453.97f3c13a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6281ebaa.css",
-    "static/js/main.7f9bf400.js"
+    "static/js/main.54b9e315.js"
   ]
 }
