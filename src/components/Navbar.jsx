@@ -132,8 +132,8 @@ const Navbar = ({ setPortfolio, setDashboard, setNotification, setNotice, setAuc
     }
 
     return (
-        <nav className="flex justify-between h-full bg-gray-200 text-white p-4 border border-r-gray-300 border-r-2">
-            <ul className='text-black text-md p-4 flex flex-col gap-2'>
+        <nav className="flex flex-col justify-between w-16 lg:w-auto  h-full bg-gray-200 text-black p-4 border border-r-gray-300 border-r-2">
+            <ul className='text-black text-md p-4 flex-col gap-2 hidden lg:flex'>
                 <li className={`flex gap-2 cursor-pointer rounded-lg px-1 py-3 ${hover === "dashboard" ? "bg-blue-400" : ""}`} 
                     onClick={onDashboardClick}>
                     <DashboardOutlinedIcon />
@@ -180,6 +180,51 @@ const Navbar = ({ setPortfolio, setDashboard, setNotification, setNotice, setAuc
                     Permissions
                 </li>
             </ul>
+            <ul className='text-black text-md flex-col gap-2 flex lg:hidden'>
+                <li className={`flex gap-2 cursor-pointer rounded-lg px-1 py-3 ${hover === "dashboard" ? "bg-blue-400" : ""}`} 
+                    onClick={onDashboardClick}>
+                    <DashboardOutlinedIcon />
+                </li>
+                <li className={`flex gap-2 cursor-pointer rounded-lg px-1 py-3 ${hover === "portfolio" ? "bg-blue-400" : ""}`} 
+                    onClick={onPortfolioClick}>
+                    <Person2OutlinedIcon />
+                </li>
+                <li className={`flex gap-2 cursor-pointer rounded-lg px-1 py-3 ${hover === "notification" ? "bg-blue-400" : ""}`}
+                    onClick={onNotificationClick}>
+                    <NotificationsNoneOutlinedIcon />
+                </li>
+                <li className={`flex gap-2 cursor-pointer rounded-lg px-1 py-3 ${hover === "notice" ? "bg-blue-400" : ""}`}
+                    onClick={onNoticeClick}>
+                    <EmailOutlinedIcon />
+                </li>
+                <li className={`flex gap-2 cursor-pointer rounded-lg px-1 py-3 ${hover === "auction" ? "bg-blue-400" : ""}`}
+                    onClick={onAuctionClick}>
+                    <ChatBubbleOutlineOutlinedIcon />
+                </li>
+                <li className={`flex gap-2 cursor-pointer rounded-lg px-1 py-3 ${hover === "dataUpload" ? "bg-blue-400" : ""}`}
+                    onClick={onDataUploadClick}>
+                    <UploadFileOutlinedIcon />
+                </li>
+                <li className={`flex gap-2 cursor-pointer rounded-lg px-1 py-3 ${hover === "controlPanel" ? "bg-blue-400" : ""}`}
+                    onClick={onControlPanelClick}>
+                    <CableOutlinedIcon />
+                </li>
+                <li className={`flex gap-2 cursor-pointer rounded-lg whitespace-nowrap px-1 py-3 ${hover === "userManagement" ? "bg-blue-400" : ""}`}
+                    onClick={onUserManagementClick}>
+                    <GroupRemoveOutlinedIcon />
+                </li>
+                <li className={`flex gap-2 cursor-pointer rounded-lg px-1 py-3 ${hover === "permissions" ? "bg-blue-400" : ""}`}
+                    onClick={onPermissionsClick}>
+                    <LockOutlinedIcon />
+                </li>
+            </ul>
+            <div className='w-full items-center hidden gap-2 flex-wrap lg:flex'>
+                <p>powered by</p> 
+                <div className='flex gap-1 font-serif text-xl text-blue-500'>
+                    <p className='rounded-full w-8 h-8 flex flex-col items-center justify-end bg-blue-600 text-3xl text-white font-semibold'>r</p>
+                    esollect
+                </div>
+            </div>
         </nav>
     )
 }

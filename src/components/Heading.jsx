@@ -28,8 +28,11 @@ const Heading = () => {
     return (
         <div className='flex flex-col w-full h-full'>
             <div className="flex w-full h-20 text-black justify-between p-4 border border-b-gray-300 border-b-2">
-                <div className='w-full items-center flex h-full'>
-                    <img className='' src={Images.logo} /> 
+                <div className='w-full items-center flex h-full text-xl text-blue-500'>
+                    <div className='flex gap-1 font-serif'>
+                        <p className='rounded-full w-8 h-8 flex flex-col items-center justify-end bg-blue-600 text-3xl text-white font-semibold'>r</p>
+                        esollect
+                    </div>
                 </div>
                 <div className='flex w-full gap-3 justify-end'>
                     <div className='rounded-full bg-gray-200 w-12  border border-black flex items-end justify-center'>
